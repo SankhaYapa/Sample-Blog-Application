@@ -1,0 +1,13 @@
+<div class="container" *ngIf="post">
+    <div class="card" >
+        <img  [src]="post.featureImageUrl" class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h1 class="card-title">{{post.title}}</h1>
+          <p class="card-text"></p>
+            <article class="card-text"[innerHTML]="post.content">
+            </article>
+        
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+</div>

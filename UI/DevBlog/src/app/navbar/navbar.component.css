@@ -1,0 +1,40 @@
+.spacer{
+    flex: 1 1 auto;
+}
+.sticky-toolbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(255, 200, 2);
+  }
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .spacer {
+    flex-grow: 1;
+  }
+  
+  .nav-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav-items a{
+    font-size: 14px;
+  }
+  .mat-toolbar-row {
+    max-width: 1024px; /* Adjust the value as needed */
+    margin: 0 auto;
+    width: 100%;
+  }
+  .custom-button {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 10px;
+  }
+  

@@ -1,0 +1,28 @@
+
+
+
+<div class="yellow-container">
+  <h1>Stay curious.</h1>
+  <p>Discover stories, thinking, and expertise from writers on any topic.</p>
+  <a mat-raised-button color="black" class="custom-button">Start Reading</a>
+</div>
+
+<div class="container" *ngIf="posts">
+
+      
+  <h2 class="trending-title"><mat-icon>trending_up</mat-icon>Trending on Minds</h2>
+  <div class="card-container">
+    <div *ngFor="let post of posts" class="card">
+      <img [src]="post.featureImageUrl" class="card-img-top" alt="Card image cap">
+      <div class="card-body">
+        <h2 class="card-title">{{ post.title.length > 40 ? (post.title | slice:0:40) + '...' : post.title }}</h2>
+        <article class="card-summary">
+          {{post.summery | slice:0:100}}{{post.summery.length > 100 ? '...' : ''}}
+        </article>
+        <br>
+        <a href="#" class="btn" [routerLink]="['/post', post.id]">View Blog Post</a>
+      </div>
+    </div>
+  </div>
+  
+</div>
